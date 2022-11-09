@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Arial, sans-serif;
+
+  /* min-width: 290px; */
+  color: #4d4e53;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+html, body {
+  font-size: 1rem;
+  
+} 
+nav {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 310px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    background-color: white;
+    z-index: -1;
+    border-bottom: 2px solid;
+  }
+  @media (max-width: 948px) {
+    nav {
+      position: relative;
+      height: 10px;
+     left: 100px;
+    }
+  }
+  nav ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: auto; 
+  } 
+
+  @media (max-width: 948px) {
+    nav ul {
+      border: 1px solid;
+      height: 207px;
+      overflow-x: 0;
+    }
+  }
+   li, a {
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1rem;
+    padding: .85rem 0 .85rem 1rem;
+    color: rgb(85, 85, 85);
+  }
+  #main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+  }
+  @media (max-width: 948px) {
+    #main-doc {
+      margin-left: -10px;
+      margin-top: 300px;
+      margin-bottom: -9px;
+    }
+  }
+  
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+  font-family: 'open sans', Arial, Helvetica, sans-serif;
+}
+article header {
+  text-align: left;
+}
+article > p {
+  margin-bottom: 20px;
+}
+#introduction p {
+  margin-left: 20px;
+}
+.beautiful-line {
+  border-color: rgba(0, 0, 0, 0.603);
+  /* border: 0.5px solid rgba(0, 0, 0, 0.603); */
+}
+
+.unordered-list {
+  margin-left: 80px;
+  font-size: 0.1rem;
+}
+
+.article-list {
+  padding: 0;
+}
+#what_you_should_already_know p {
+  margin-left: 30px;
+  transition: 3s;
+}
+#what_you_should_already_know ul {
+  margin-left: 70px;
+  transition: 3s;
+}
+.whatyoushouldknow_list-itm {
+  padding: 0;
+}
+
+p {
+  margin-left: 30px;
+}
+code {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 35px ;
+  display: block;
+  white-space: pre-line;
+  font-family: monospace;
+}
+
+.span {
+  padding-bottom: 15px;
+  padding-top: 0;
+}
+.itm-list {
+  padding: 10px;
+}
+#mdn {
+  color: blue;
+  padding: 0;
+}
+
+@media (min-width: 952px) and (max-width: 1550px){
+ html, body, header, nav {
+background-color: rgb(255, 255, 255);
+}
+}
+@media (max-width: 948px) {
+  html, body, header, nav {
+    background-color: rgb(255, 255, 255);
+  }
+
+}
